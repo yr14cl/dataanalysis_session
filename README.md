@@ -6,6 +6,7 @@ we need build "session_id" this parameter to help realted shakeholder know more 
 # objective
 
 # strcuture 
+```bash
 wooclap-session-analysis/
 ├── data/                     
 │   └── sample.csv
@@ -25,3 +26,4 @@ wooclap-session-analysis/
 │
 ├── README.md                
 ├── requirements.txt          
+```

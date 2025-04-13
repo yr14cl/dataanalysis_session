@@ -11,10 +11,11 @@ wooclap-session-analysis/
 ├── data/                     
 │   └── sample.csv
 │
-├── notebooks/             
-│   ├── 01_object_id_frequency.ipynb     
-│   ├── 02_participant_session_split.ipynb
-│   └── 03_leiden_graph_clustering.ipynb  
+├── notebooks/
+│   ├── 01_eda.ipynb            
+│   ├── 02_object_id_frequency.ipynb     
+│   ├── 03participant_session_split.ipynb
+│   └── 04_leiden_graph_clustering.ipynb  
 │
 ├── src/                      
 │   ├── data_loader.py         
@@ -23,7 +24,7 @@ wooclap-session-analysis/
 │   └── session_analysis.py    
 │
 ├── session_pipeline.py       
-│
+│── streamlit.py 
 ├── README.md                
 ├── requirements.txt          
 ```

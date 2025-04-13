@@ -11,7 +11,7 @@ wooclap-session-analysis/
 ├── data/                     
 │   └── sample.csv
 │
-├── notebooks/
+├── notebook/
 │   ├── 01_eda.ipynb            
 │   ├── 02_object_id_frequency.ipynb     
 │   ├── 03participant_session_split.ipynb

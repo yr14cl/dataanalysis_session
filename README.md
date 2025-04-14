@@ -13,9 +13,8 @@ wooclap-session-analysis/
 │
 ├── notebook/
 │   ├── 01_eda.ipynb            
-│   ├── 02_object_id_frequency.ipynb     
-│   ├── 03participant_session_split.ipynb
-│   └── 04_leiden_graph_clustering.ipynb  
+│   ├── 02_session_id_without_created_at.ipynb     
+│   └── 03_session_id_with_created_at.ipynb  
 │
 ├── src/                      
 │   ├── data_loader.py         

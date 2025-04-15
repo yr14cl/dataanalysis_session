@@ -1,6 +1,6 @@
 import pandas as pd
 
-def load_clean_data(path):
+def load_sample_data(path):
   df= pd.read_csv(path)
   df['create_at']= pd.to_datetime(df['created_at'],errors = 'coerce')
   return df

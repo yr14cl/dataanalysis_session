@@ -38,8 +38,10 @@ for event_id, group in df_without_time.groupby("event_id"):
 # merge data 
 if leiden_results:
     leiden_df = pd.concat(leiden_results)
+    leiden_df = leiden_df.drop(columns=['event_id'])
     df_leiden = df_without_time.copy()
     df_leiden = df_leiden.join(leiden_df, how='left')
+    df_leiden["session_type"] = "leiden"
 else:
     df_leiden = pd.DataFrame()
 

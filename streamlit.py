@@ -74,6 +74,7 @@ def plot_top10_student_monthly(df):
     plt.xticks(rotation=45)
     st.pyplot(fig)
     st.dataframe(top10_df.reset_index(drop=True))
+    st.markdown("Definition of Top 10% Most Active Students: The top X% of students with the highest number of sessions participated in, within that month. Instead of using a statistical quantile threshold (e.g., session_count ≥ 90th percentile), we rank all students within each month by their number of sessions, and then select the top 10% by count.")
 
 # Figure 3.1: Top 10% vs All monthly average session trends
 def plot_top10_vs_all_trend(df):

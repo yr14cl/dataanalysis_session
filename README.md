@@ -22,10 +22,9 @@ wooclap-session-analysis/
 │
 ├── src/                      
 │   ├── data_loader.py         
-│   ├── leiden_session.py      
-│   ├── temporal_session.py    
-│   └── run_all_sessions.py   
-│
+│   ├── leiden_session.py         
+│   └── temporal_session.py  
+│── run_all_sessions.py
 ├── session_pipeline.py       
 │── streamlit.py 
 ├── README.md                

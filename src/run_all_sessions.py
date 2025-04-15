@@ -1,15 +1,15 @@
 import pandas as pd
-from data_loader import load_and_split_data
-from leiden_session import (
+from src import (
+    load_sample_data,
+    split_data_by_timestamp_presence,
     build_bipartite_graph,
     leiden_community_detection,
-    map_communities_to_dataframe
-)
-from temporal_session import (
+    map_communities_to_dataframe,
     assign_sessions_with_gap_and_maxspan,
     compute_session_durations,
     normalize_session_ids
 )
+
 
 df = pd.read_csv("data/sample.csv")
 df['created_at'] = pd.to_datetime(df['created_at'], errors='coerce')

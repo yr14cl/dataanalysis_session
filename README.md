@@ -1,10 +1,29 @@
 # dataanalysis_session
-# background
+## Overview
 Wooclap is a tool that allows teachers and trainers to easily ask different types of questions (open questions, multiple choice questions, find on image questions, etc.) to an audience of students, and to allow these students to answer via their smartphones. 
 we need build "session_id" this parameter to help realted shakeholder know more information about user's reaction and to evaluate quality of each session. 
 
-# objective
 
+## Project Structure
+
+### A. Data Preparation
+### B. Exploratory Data Analysis (EDA）
+### C. Modelling
+### D. Forecasting
+### E. Streamlit Dashboard
+
+## Getting Started
+
+To explore our dashboard and insights:
+
+1. Clone this repository:
+    ```git clone https://github.com/.git```
+2. Install required dependencies:
+    ```pip install -r requirements.txt```
+3. Run the application:
+    ```python streamlit.py```
+4. Open the provided web app URL in your browser.
+   
 # strcuture 
 ```bash
 wooclap-session-analysis/

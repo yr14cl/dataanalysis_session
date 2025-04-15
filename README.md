@@ -10,7 +10,8 @@ I implement two distinct strategies depends on whether have timestamp data:
 
 A fully interactive Streamlit dashboard is provided to explore session distribution, user participation trends, and identify top-performing students across months. 
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=-Zs4XUPZ8bg" frameborder="0" allowfullscreen></iframe>
+## Demo
+https://www.youtube.com/watch?v=-Zs4XUPZ8bg
 
 ## Getting Started
 

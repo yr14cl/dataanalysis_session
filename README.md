@@ -46,3 +46,38 @@ wooclap-session-analysis/
 ├── README.md                
 └── requirements.txt          
 ```
+## Data Pipeline (Conceptual Design)
+
+```
+          +----------------+                 
+          |  sample.csv    |                  
+          +----------------+                 
+                  |                                
+          [Step 1: Data Cleaning]                   
+                  |                                
+          +---------------------+         
+          | Filter & Split Data |  <---- Pandas                    
+          +---------------------+         
+           /                          \       
+    [with timestamp]         [without timestamp]     
+           |                          |        
+     [Session Split]           [Leiden Clustering]    
+      (Gap + Span Rule)         (Bipartite Graph)    
+           |                          |
+    +-----------------+     +-----------------+     
+    | temporal_sessions |   | leiden_sessions  |    
+    +-----------------+     +-----------------+     
+           \______________________/                
+                 [Merge Results]                    
+                      |                             
+              [All Sessions CSV]                    
+                      |                             
+         [Streamlit Dashboard Visualization]         
+                      |                             
+          Insights for Product Manager
+``` 
+## Technologies
+- **Data Processing**: pandas, numpy
+- **Graph Clustering**: networkx, python-igraph, leidenalg
+- **Visualization**: matplotlib, seaborn
+- **Web Dashboard**: streamlit

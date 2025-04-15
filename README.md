@@ -10,7 +10,10 @@ we need build "session_id" this parameter to help realted shakeholder know more 
 wooclap-session-analysis/
 ├── data/                     
 │   └── sample.csv
-│
+├── outputs/
+│   ├── temporal_sessions.csv
+│   ├── leiden_sessions.csv
+│   └── all_sessions.csv
 ├── notebook/
 │   ├── 01_eda.ipynb            
 │   ├── 02_session_id_without_created_at.ipynb

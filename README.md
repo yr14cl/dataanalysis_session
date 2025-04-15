@@ -43,7 +43,7 @@ wooclap-session-analysis/
 │   ├── leiden_session.py         
 │   └── temporal_session.py  
 │── run_all_sessions.py
-├── streamlir.py        
+├── streamlit.py        
 ├── README.md                
 ├── requirements.txt          
 ```

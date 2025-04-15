@@ -12,26 +12,28 @@ def load_data():
     return df
 
 # Figure 1: Distribution of the number of questions answered per session
+
 def plot_session_answer_distribution(df):
     st.subheader("1. Number of answers per session")
+
     df_clean = df[df['session_id'].notna()]
     session_types = df_clean['session_type'].dropna().unique().tolist()
     session_types.insert(0, 'total')
     selected_type = st.selectbox("Select session type", session_types)
+
     filtered_df = df_clean if selected_type == 'total' else df_clean[df_clean['session_type'] == selected_type]
-    session_counts = filtered_df.groupby('session_id').size()
-    hist_data = session_counts.value_counts().sort_index()
-    fig1, ax1 = plt.subplots()
-    bars = ax1.bar(hist_data.index, hist_data.values)
-    total_sessions = hist_data.sum()
-    for bar in bars:
-        height = bar.get_height()
-        percent = f"{(height / total_sessions) * 100:.1f}%"
-        ax1.text(bar.get_x() + bar.get_width()/2, height, percent, ha='center', va='bottom', fontsize=7)
-    ax1.set_xlabel("Number of answers per session")
-    ax1.set_ylabel("Number of sessions")
-    ax1.set_title(f"Distribution of number of answers per session ({selected_type})")
-    st.pyplot(fig1)
+
+    session_counts = filtered_df.groupby('session_id').size().reset_index(name='answer_count')
+
+    fig, ax = plt.subplots(figsize=(10, 5))
+    sns.countplot(data=session_counts, x='answer_count', ax=ax, color='skyblue')
+
+    ax.set_title(f"Distribution of number of answers per session ({selected_type})")
+    ax.set_xlabel("Number of answers per session")
+    ax.set_ylabel("Number of sessions")
+
+    st.pyplot(fig)
+
 
 # Figure 2: Number of sessions each student participated in per month 
 def plot_sessions_per_student_month(df):

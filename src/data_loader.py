@@ -2,7 +2,7 @@ import pandas as pd
 
 def load_clean_data(path):
   df= pd.read_csv(path)
-  df['create_at']= pd.to_datetime(df['created_at'],errots = 'coerce')
+  df['create_at']= pd.to_datetime(df['created_at'],errors = 'coerce')
   return df
   
 def split_data_by_timestamp_presence(df):

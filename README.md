@@ -2,7 +2,7 @@
 ## Overview
 This project focuses on reconstructing and analyzing user sessions in Wooclap, a digital classroom interaction platform. Since Wooclap logs do not provide session identifiers, our goal is to infer them from user interaction data, enabling more realistic, session-oriented analytics.
 
-We implement two distinct strategies depends on whether we have timestamp data:
+I implement two distinct strategies depends on whether have timestamp data:
 
   1. Temporal-Based Splitting: Using timestamp gaps and session span limits.
 
@@ -13,7 +13,7 @@ A fully interactive Streamlit dashboard is provided to explore session distribut
 
 ## Getting Started
 
-To explore our dashboard and insights:
+To explore the dashboard and insights:
 
 1. Clone this repository:
     ```git clone https://github.com/yr14cl/dataanalysis_session.git```
@@ -44,5 +44,5 @@ wooclap-session-analysis/
 │── run_all_sessions.py
 ├── streamlit.py        
 ├── README.md                
-├── requirements.txt          
+└── requirements.txt          
 ```

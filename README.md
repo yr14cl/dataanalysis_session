@@ -25,8 +25,7 @@ wooclap-session-analysis/
 │   ├── leiden_session.py         
 │   └── temporal_session.py  
 │── run_all_sessions.py
-├── session_pipeline.py       
-│── streamlit.py 
+├── streamlir.py        
 ├── README.md                
 ├── requirements.txt          
 ```

@@ -21,7 +21,7 @@ To explore our dashboard and insights:
 2. Install required dependencies:
     ```pip install -r requirements.txt```
 3. Run the application:
-    ```python streamlit.py```
+    ```python run_all_sessions.py```
 4. Open the provided web app URL in your browser.
    
 # strcuture 

@@ -4,20 +4,12 @@ This project focuses on reconstructing and analyzing user sessions in Wooclap, a
 
 We implement two distinct strategies depends on whether we have timestamp data:
 
-Temporal-Based Splitting: Using timestamp gaps and session span limits.
+  1. Temporal-Based Splitting: Using timestamp gaps and session span limits.
 
-Graph-Based Clustering (Leiden Algorithm): Constructing bipartite graphs between participants and questions to detect implicit groupings.
+  2. Graph-Based Clustering (Leiden Algorithm): Constructing bipartite graphs between participants and questions to detect implicit groupings.
 
 A fully interactive Streamlit dashboard is provided to explore session distribution, user participation trends, and identify top-performing students across months. 
 
-
-## Project Structure
-
-### A. Data Preparation
-### B. Exploratory Data Analysis (EDA）
-### C. Modelling
-### D. Forecasting
-### E. Streamlit Dashboard
 
 ## Getting Started
 

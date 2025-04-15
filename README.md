@@ -46,7 +46,7 @@ wooclap-session-analysis/
 ├── README.md                
 └── requirements.txt          
 ```
-## Data Pipeline (Conceptual Design)
+# Data Pipeline 
 
 ```
           +----------------+                 
@@ -76,7 +76,7 @@ wooclap-session-analysis/
                       |                             
           Insights for Product Manager
 ``` 
-## Technologies
+# Technologies
 - **Data Processing**: pandas, numpy
 - **Graph Clustering**: networkx, python-igraph, leidenalg
 - **Visualization**: matplotlib, seaborn

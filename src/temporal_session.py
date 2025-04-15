@@ -33,8 +33,10 @@ def assign_sessions_with_gap_and_maxspan(df, max_gap_seconds=2700, max_session_s
         df.at[idx, 'session_id'] = session_counter
         last_event = current_event
         last_time = current_time
+    df['session_id'] = df['event_id'].astype(str) + '_sess_' + df['session_id'].astype(str)
 
     return df
+
 
 def compute_session_durations(df):
     session_df = df.groupby(['event_id', 'session_id']).agg(

@@ -53,3 +53,6 @@ df_all.to_csv("outputs/all_sessions.csv", index=False)
 
 print(" Session reconstruction completed.")
 
+import os
+os.system("streamlit run streamlit.py")
+

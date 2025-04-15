@@ -37,7 +37,6 @@ wooclap-session-analysis/
 │   ├── 02_session_id_without_created_at.ipynb
 │   ├── 03_session_id_with_created_at.ipynb  
 │   └── 04_test.ipynb  
-│
 ├── src/                      
 │   ├── data_loader.py         
 │   ├── leiden_session.py         

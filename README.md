@@ -17,7 +17,7 @@ we need build "session_id" this parameter to help realted shakeholder know more 
 To explore our dashboard and insights:
 
 1. Clone this repository:
-    ```git clone https://github.com/.git```
+    ```git clone https://github.com/yr14cl/dataanalysis_session.git```
 2. Install required dependencies:
     ```pip install -r requirements.txt```
 3. Run the application:

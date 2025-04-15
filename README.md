@@ -1,7 +1,14 @@
 # dataanalysis_session
 ## Overview
-Wooclap is a tool that allows teachers and trainers to easily ask different types of questions (open questions, multiple choice questions, find on image questions, etc.) to an audience of students, and to allow these students to answer via their smartphones. 
-we need build "session_id" this parameter to help realted shakeholder know more information about user's reaction and to evaluate quality of each session. 
+This project focuses on reconstructing and analyzing user sessions in Wooclap, a digital classroom interaction platform. Since Wooclap logs do not provide session identifiers, our goal is to infer them from user interaction data, enabling more realistic, session-oriented analytics.
+
+We implement two distinct strategies depends on whether we have timestamp data:
+
+Temporal-Based Splitting: Using timestamp gaps and session span limits.
+
+Graph-Based Clustering (Leiden Algorithm): Constructing bipartite graphs between participants and questions to detect implicit groupings.
+
+A fully interactive Streamlit dashboard is provided to explore session distribution, user participation trends, and identify top-performing students across months. 
 
 
 ## Project Structure

@@ -1,6 +1,6 @@
 # dataanalysis_session
 ## Overview
-This project focuses on reconstructing and analyzing user sessions in Wooclap, a digital classroom interaction platform. Since Wooclap logs do not provide session identifiers, our goal is to infer them from user interaction data, enabling more realistic, session-oriented analytics.
+This project focuses on reconstructing and analyzing user sessions in teaching app, a digital classroom interaction platform. Since Wooclap logs do not provide session identifiers, our goal is to infer them from user interaction data, enabling more realistic, session-oriented analytics.
 
 I implement two distinct strategies depends on whether have timestamp data:
 
